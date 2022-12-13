@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { LayoutBase } from "./app/layout";
-import { Home } from "./app/page";
+import { Home, Test , NotFound} from "./app/page";
 
 function App() {
 	return (
@@ -8,7 +8,8 @@ function App() {
 			<Routes>
 				<Route path="/">
 					<Route index element={<Home />} />
-					<Route path="*" element={<h1>Not Found</h1>} />
+					<Route path="test" element={<Test />} />
+					<Route path="*" element={<NotFound />} />
 				</Route>
 			</Routes>
 		</LayoutBase>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
 	return (
@@ -26,9 +27,9 @@ function Home() {
 						Podrías prevenir algunos tipos de anemia si sigues una dieta
 						saludable y variada.
 					</p>
-					<button className="btn btn-primary btn-lg" type="button">
+					<Link to="test" className="btn btn-primary btn-lg">
 						Hacerme un test
-					</button>
+					</Link>
 				</div>
 			</div>
 
