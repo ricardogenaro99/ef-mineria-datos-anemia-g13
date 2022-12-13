@@ -18,17 +18,17 @@ function Card({
 				<h6 className="card-title">Otras probabilidades:</h6>
 				<ul className="card-text">
 					<li>
-						Probabilidad Normal: <b>{probability_Normal}</b>
+						Probabilidad Anemia (Normal): <b>{probability_Normal}</b>
 					</li>
 					<li>
-						Probabilidad Anemia Leve: <b>{probability_Anemia_Leve}</b>
+						Probabilidad Anemia (Leve): <b>{probability_Anemia_Leve}</b>
 					</li>
 					<li>
-						Probabilidad Anemia Moderada: <b>{probability_Anemia_Moderada}</b>
+						Probabilidad Anemia (Moderada): <b>{probability_Anemia_Moderada}</b>
 					</li>
-					<li>
+					{/* <li>
 						Probabilidad Anemia Severa: <b>{probability_Anemia_Severa}</b>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 		</div>
