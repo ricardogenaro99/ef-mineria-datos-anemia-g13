@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { InputForm, Loader, SelectForm } from "../components";
+import { Card, InputForm, Loader, SelectForm } from "../components";
 
 const initialForm = {
 	EdadMeses: "",
@@ -25,7 +25,7 @@ const initResult = {
 };
 function Test() {
 	const [form, setForm] = useState(initialForm);
-	const [result, setResult] = useState(initResult);
+	const [result, setResult] = useState();
 	const [loading, setLoading] = useState(false);
 
 	const config = {
@@ -74,6 +74,7 @@ function Test() {
 				node_id,
 			});
 		} catch (error) {
+			setResult(initResult);
 			toast.error(error.message);
 		} finally {
 			setLoading(false);
@@ -85,7 +86,7 @@ function Test() {
 	return (
 		<>
 			<div className="row m-0 p-0 g-3">
-				<form className="col-md-7 row g-3" onSubmit={handleSubmit}>
+				<form className="col-md-6 row g-3" onSubmit={handleSubmit}>
 					<InputForm label="Edad en meses" name="EdadMeses" {...props} />
 					<SelectForm
 						label="Sexo"
@@ -116,7 +117,9 @@ function Test() {
 						</button>
 					</div>
 				</form>
-				<div className="col-md-5 px-5">{JSON.stringify(result, null, 4)}</div>
+				<div className="col-md-6 px-5">
+					{<Card {...result} />}
+				</div>
 			</div>
 			{loading && <Loader />}
 		</>
