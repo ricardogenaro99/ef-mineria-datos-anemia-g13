@@ -20,14 +20,13 @@ function Home() {
 						Consulta con el médico si sospechas que tienes anemia. Puede ser una
 						señal de advertencia de una enfermedad grave.
 					</p>
-
 					<p className="fs-5">
 						Los tratamientos para la anemia, que dependen de la causa, abarcan
 						desde tomar suplementos hasta someterse a procedimientos médicos.
 						Podrías prevenir algunos tipos de anemia si sigues una dieta
 						saludable y variada.
 					</p>
-					<Link to="test" className="btn btn-primary btn-lg">
+					<Link to="test" className="btn btn-warning btn-lg">
 						Hacerme un test
 					</Link>
 				</div>
@@ -59,6 +58,14 @@ function Home() {
 							INS/CENAN, financiado por el programa presupuestal articulado
 							nutricional (PAN).
 						</p>
+						<a
+							href="https://www.datosabiertos.gob.pe/dataset/sistema-de-informaci%C3%B3n-del-estado-nutricional-de-ni%C3%B1os-y-gestantes-per%C3%BA-inscenan-instituto"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="fs-4 text-warning text-decoration-none"
+						>
+							Datos abiertos
+						</a>
 					</div>
 				</div>
 				<div className="col-md-6">
@@ -151,7 +158,6 @@ function Home() {
 					</div>
 				</div>
 			</div>
-			<footer className="pt-3 mt-4 text-muted border-top">2022</footer>
 		</>
 	);
 }

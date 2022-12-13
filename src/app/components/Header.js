@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 
 function Header() {
 	return (
-		<header className="border-bottom">
-			<nav className="navbar navbar-expand-lg container">
+		<header className="border-bottom bg-dark">
+			<nav className="navbar navbar-expand-lg container navbar-dark">
 				<div className="container-fluid">
 					<Link
 						to="/"
@@ -13,9 +13,9 @@ function Header() {
 						<img
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/UNMSM_escudo_XVI-XXI_transparente_siglas_nombre_vertical.svg/1200px-UNMSM_escudo_XVI-XXI_transparente_siglas_nombre_vertical.svg.png"
 							alt="logo"
-							width="30"
+							width="40"
 						/>
-						<span className="fs-4">EF-Mineria Datos G13</span>
+						<span className="fs-4 text-white">EF-Mineria Datos G13</span>
 					</Link>
 					<button
 						className="navbar-toggler"
