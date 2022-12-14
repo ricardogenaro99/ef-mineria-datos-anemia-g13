@@ -24,6 +24,7 @@ function InputForm({
 				value={form[name]}
 				onChange={handleChange}
 				required
+				step="0.00001"
 				min={min}
 			/>
 		</div>

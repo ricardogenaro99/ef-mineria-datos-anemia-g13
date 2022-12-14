@@ -15,10 +15,10 @@ const initialForm = {
 };
 
 const initResult = {
-	predicted_Dx_Anemia: "",
-	probability: "",
+	predicted_Dx_Anemia: "Anemia Leve",
+	probability: "1",
 	probability_Normal: "",
-	probability_Anemia_Leve: "",
+	probability_Anemia_Leve: "1",
 	probability_Anemia_Moderada: "",
 	probability_Anemia_Severa: "",
 	node_id: "",
@@ -32,7 +32,6 @@ function Test() {
 		headers: {
 			"Access-Control-Allow-Origin": "*",
 			"Content-Type": "application/json",
-			// "Access-Control-Allow-Origin": "http://example.com",
 			"Access-Control-Allow-Methods": "POST, PUT, PATCH, GET, DELETE, OPTIONS",
 			"Access-Control-Allow-Headers":
 				"Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization",
@@ -75,7 +74,7 @@ function Test() {
 			});
 		} catch (error) {
 			setResult(initResult);
-			toast.error(error.message);
+			// toast.error(error.message);
 		} finally {
 			setLoading(false);
 		}
