@@ -59,7 +59,7 @@ function Home() {
 							nutricional (PAN).
 						</p>
 						<a
-							href="https://www.datosabiertos.gob.pe/dataset/sistema-de-informaci%C3%B3n-del-estado-nutricional-de-ni%C3%B1os-y-gestantes-per%C3%BA-inscenan-instituto-2"
+							href="https://www.datosabiertos.gob.pe/dataset/sistema-de-informaci%C3%B3n-del-estado-nutricional-de-ni%C3%B1os-y-gestantes-per%C3%BA-inscenan-instituto-5"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="fs-4 text-warning text-decoration-none"
